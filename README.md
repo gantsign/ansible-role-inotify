@@ -2,6 +2,7 @@ Ansible Role: Inotify
 =====================
 
 [![Build Status](https://travis-ci.org/gantsign/ansible-role-inotify.svg?branch=master)](https://travis-ci.org/gantsign/ansible-role-inotify)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.inotify-blue.svg)](https://galaxy.ansible.com/gantsign/inotify)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-inotify/master/LICENSE)
 
 Role to configure the Inotify system settings.
