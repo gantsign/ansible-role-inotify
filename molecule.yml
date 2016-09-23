@@ -1,21 +1,27 @@
 ---
+ansible:
+  playbook: tests/test.yml
+
 driver:
   name: docker
 
 docker:
   containers:
-
-      - name: ansible-role-inotify-01
-        image: ubuntu
-        image_version: latest
-        ansible_groups:
-          - group1
-
-      - name: ansible-role-inotify-02
-        image: ubuntu
-        image_version: latest
-        ansible_groups:
-          - group1
+    - name: ansible-role-inotify-debian-wheezy
+      image: debian
+      image_version: '7'
+    - name: ansible-role-inotify-debian-jessie
+      image: debian
+      image_version: '8'
+    - name: ansible-role-inotify-ubuntu-trusty
+      image: ubuntu
+      image_version: '14.04'
+    - name: ansible-role-inotify-ubuntu-xenial
+      image: ubuntu
+      image_version: '16.04'
+    - name: ansible-role-inotify-centos-7
+      image: centos
+      image_version: '7'
 
 verifier:
   name: testinfra
