@@ -1,5 +1,10 @@
 ---
-- hosts: localhost
+- hosts: all
   remote_user: root
   roles:
-    - ansible-role-inotify
+    - role: ansible-role-inotify
+      inotify_sysctl_file: /etc/sysctl.d/10-ansible-inotify.conf
+    - role: ansible-role-inotify
+      inotify_max_queued_events: 16384
+      inotify_max_user_instances: 128
+      inotify_max_user_watches: 524288
