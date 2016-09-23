@@ -1,0 +1,21 @@
+---
+driver:
+  name: docker
+
+docker:
+  containers:
+
+      - name: ansible-role-inotify-01
+        image: ubuntu
+        image_version: latest
+        ansible_groups:
+          - group1
+
+      - name: ansible-role-inotify-02
+        image: ubuntu
+        image_version: latest
+        ansible_groups:
+          - group1
+
+verifier:
+  name: testinfra
