@@ -9,4 +9,4 @@ inotify_max_user_instances:
 inotify_max_user_watches:
 
 # The file to save inotify config to.
-inotify_sysctl_file: /etc/sysctl.d/20-ansible-inotify.conf
+inotify_sysctl_file: '/etc/sysctl.d/20-ansible-inotify.conf'
