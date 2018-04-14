@@ -1,6 +1,6 @@
 ---
-- hosts: all
-  remote_user: root
+- name: Converge
+  hosts: all
   roles:
     - role: ansible-role-inotify
       inotify_sysctl_file: /etc/sysctl.d/10-ansible-inotify.conf
