@@ -13,7 +13,7 @@ particularly when using IDEs.
 Requirements
 ------------
 
-* Ansible >= 2.0
+* Ansible >= 2.3
 
     * Note: earlier versions of Ansible are likely to work but have not been
       tested.
