@@ -5,18 +5,18 @@ galaxy_info:
   license: MIT
   min_ansible_version: 2.3
   platforms:
-  - name: EL
-    versions:
-    - 7
-  - name: Ubuntu
-    versions:
-    - trusty
-    - wily
-    - xenial
-  - name: Debian
-    versions:
-    - jessie
-    - wheezy
+    - name: EL
+      versions:
+        - 7
+    - name: Ubuntu
+      versions:
+        - trusty
+        - wily
+        - xenial
+    - name: Debian
+      versions:
+        - jessie
+        - wheezy
   galaxy_tags:
     - inotify
     - sysctl
