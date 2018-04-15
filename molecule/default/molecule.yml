@@ -9,16 +9,8 @@ lint:
   name: yamllint
 
 platforms:
-  - name: ansible-role-inotify-debian-wheezy
-    image: debian:7
-  - name: ansible-role-inotify-debian-stretch
-    image: debian:9
-  - name: ansible-role-inotify-ubuntu-trusty
-    image: ubuntu:14.04
   - name: ansible-role-inotify-ubuntu-xenial
     image: ubuntu:16.04
-  - name: ansible-role-inotify-centos-7
-    image: centos:7
 
 provisioner:
   name: ansible
