@@ -9,7 +9,7 @@ lint:
   name: yamllint
 
 platforms:
-  - name: ansible-role-inotify-ubuntu-trusty
+  - name: ansible-role-inotify-ubuntu-min
     image: ubuntu:14.04
 
 provisioner:

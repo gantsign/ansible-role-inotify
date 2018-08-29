@@ -9,7 +9,7 @@ lint:
   name: yamllint
 
 platforms:
-  - name: ansible-role-inotify-centos-7
+  - name: ansible-role-inotify-centos
     image: centos:7
 
 provisioner:
