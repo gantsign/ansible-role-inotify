@@ -67,7 +67,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-    - role: gantsign.maven
+    - role: gantsign.inotify
       inotify_max_user_watches: 524288
 ```
 
