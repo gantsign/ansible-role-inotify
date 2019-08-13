@@ -10,7 +10,7 @@
   become: yes
   sysctl:
     name: fs.inotify.max_queued_events
-    value: '{{ inotify_max_queued_events }}'
+    value: '{{ inotify_max_queued_events | string }}'
     state: present
     reload: "{{ (not ansible_virtualization_type is defined) or ansible_virtualization_type != 'docker' }}"
     sysctl_file: '{{ inotify_sysctl_file }}'
@@ -20,7 +20,7 @@
   become: yes
   sysctl:
     name: fs.inotify.max_user_instances
-    value: '{{ inotify_max_user_instances }}'
+    value: '{{ inotify_max_user_instances | string }}'
     state: present
     reload: "{{ (not ansible_virtualization_type is defined) or ansible_virtualization_type != 'docker' }}"
     sysctl_file: '{{ inotify_sysctl_file }}'
@@ -30,7 +30,7 @@
   become: yes
   sysctl:
     name: fs.inotify.max_user_watches
-    value: '{{ inotify_max_user_watches }}'
+    value: '{{ inotify_max_user_watches | string }}'
     state: present
     reload: "{{ (not ansible_virtualization_type is defined) or ansible_virtualization_type != 'docker' }}"
     sysctl_file: '{{ inotify_sysctl_file }}'
