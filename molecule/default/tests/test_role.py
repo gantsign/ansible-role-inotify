@@ -1,10 +1,4 @@
 import pytest
-import os
-
-import testinfra.utils.ansible_runner
-
-testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
-    os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
 def test_inotify_defaults(host):
@@ -20,7 +14,7 @@ def test_inotify_file_permisions(host):
     assert kb.is_file
     assert kb.user == 'root'
     assert kb.group == 'root'
-    assert oct(kb.mode) == '0644'
+    assert oct(kb.mode) == '0o644'
 
 
 @pytest.mark.parametrize('setting', [
