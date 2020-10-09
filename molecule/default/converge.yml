@@ -1,6 +1,14 @@
 ---
 - name: Converge
   hosts: all
+
+  pre_tasks:
+    - name: update apt cache
+      apt:
+        update_cache: yes
+      changed_when: no
+      when: "ansible_pkg_mgr == 'apt'"
+
   roles:
     - role: ansible-role-inotify
       inotify_sysctl_file: /etc/sysctl.d/10-ansible-inotify.conf
