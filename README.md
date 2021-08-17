@@ -1,7 +1,7 @@
 Ansible Role: Inotify
 =====================
 
-[![Build Status](https://travis-ci.com/gantsign/ansible-role-inotify.svg?branch=master)](https://travis-ci.com/gantsign/ansible-role-inotify)
+[![Tests](https://github.com/gantsign/ansible-role-inotify/workflows/Tests/badge.svg)](https://github.com/gantsign/ansible-role-inotify/actions?query=workflow%3ATests)
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.inotify-blue.svg)](https://galaxy.ansible.com/gantsign/inotify)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-inotify/master/LICENSE)
 

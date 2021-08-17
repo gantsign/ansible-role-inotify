@@ -1,2 +1,3 @@
 ---
-# vars file for ansible-role-inotify
+# Whether to reload sysctl when there are changes
+inotify_reload: "{{ (not ansible_virtualization_type is defined) or ansible_virtualization_type != 'docker' }}"
