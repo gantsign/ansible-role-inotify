@@ -9,6 +9,11 @@
       changed_when: no
       when: "ansible_pkg_mgr == 'apt'"
 
+    - name: install sysctl (yum)
+      yum:
+        name: procps-ng
+      when: "ansible_os_family in ('Rocky', 'RedHat')"
+
   roles:
     - role: ansible-role-inotify
       inotify_sysctl_file: /etc/sysctl.d/10-ansible-inotify.conf

@@ -12,8 +12,8 @@ lint: |
   flake8
 
 platforms:
-  - name: ansible-role-inotify-centos
-    image: centos:7
+  - name: ansible-role-inotify-rocky
+    image: rockylinux/rockylinux:8
     dockerfile: ../default/Dockerfile.j2
 
 provisioner:
