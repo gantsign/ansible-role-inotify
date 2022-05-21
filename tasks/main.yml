@@ -6,6 +6,13 @@
     state: present
   when: "ansible_pkg_mgr == 'apt'"
 
+- name: install systemd (dnf)
+  become: yes
+  package:
+    name: systemd
+    state: present
+  when: "ansible_pkg_mgr == 'dnf'"
+
 - name: set max_queued_events
   become: yes
   sysctl:
